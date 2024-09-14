@@ -7,4 +7,9 @@ router.get('', (req,res)=>{
     res.render('index')
 });
 
+router.get('/about', (req,res)=>{
+    // res.send('Hello ')
+    res.render('about')
+});
+
 module.exports = router;
