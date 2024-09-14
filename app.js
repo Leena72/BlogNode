@@ -10,7 +10,7 @@ app.use(express.static('public'))
 
 // Templating engine -- as middleware
 app.use(expressLayout);
-app.set('layout','./layout/main');
+app.set('layout','./layouts/main');
 app.set('view engine','ejs');
 
 // route
