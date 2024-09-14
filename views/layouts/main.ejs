@@ -7,10 +7,15 @@
     <meta name="description" content="<%= locals.description %>" />
     <link rel="stylesheet" href="/css/style.css" />
     <script type="text/javascript" src="/js/script.js"></script>
-    
   </head>
   <body>
     <!-- Main layout -->
-    <%- body %>
+    <div class="container">
+      <%- include('../partials/header.ejs') %> 
+     <main class="main">
+      <%- body %>
+    </main> 
+      <%- include('../partials/footer.ejs') %>
+    </div>
   </body>
 </html>

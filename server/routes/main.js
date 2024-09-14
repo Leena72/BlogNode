@@ -12,8 +12,11 @@ router.get('', (req,res)=>{
 });
 
 router.get('/about', (req,res)=>{
-    // res.send('Hello ')
     res.render('about')
+});
+
+router.get('/contact', (req,res)=>{
+    res.render('contact')
 });
 
 module.exports = router;
